@@ -26,3 +26,22 @@ function feladat2Array (arr , a){
 };
 
 feladat2Array(array,12);
+
+console.log('-------------3.feladat------------');
+
+const stringArray = ['1.','2.','3.','4.'];
+
+
+function showContent(arr) {
+ 
+ const temp = document.getElementsByClassName("t")[0];
+     const item = temp.content.querySelector("li");
+   for (let i = 0; i < arr.length; i++) {
+       const a = document.importNode(item, true);
+       a.textContent += arr[i];
+        document.body.appendChild(a);
+  }
+}
+
+showContent(stringArray);
+
